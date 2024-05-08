@@ -1,6 +1,6 @@
 body{
     min-width: 720px;
-    max-width: 1200px;
+    max-width: 1000px;
     padding-left: 40px;
 }
 img{
@@ -8,12 +8,13 @@ img{
     height: 500px;
 }
 h2{
-    color:rgb(180, 35, 35);
+    color:hsl(332, 51%, 32%);
     font-size:24px;
     
 }
 b,h1{ 
     text-transform: capitalize;
+    color:hsl(30, 10%, 34%);
 }
 h2#sam{
     position:relative;
