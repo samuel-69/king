@@ -20,3 +20,13 @@ h2#sam{
     position:relative;
     left:50px;
 }
+table{
+    width: 500px;
+    border-spacing: 10px;
+    border: 1px solid;
+}
+th,td{
+    border: 1px solid #99dcc8;
+}
+
+
