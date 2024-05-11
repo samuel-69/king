@@ -6,30 +6,22 @@
     src: local('Helvetica'), url('web fonts/Helvetica.woff') format('woff');
     }
    
-    
-  
-    
-    
-    
-    
-    
-    
-    body{
-        background-color:  hsl(330, 100%, 98%);
+body{
+    background-color:  hsl(330, 100%, 98%);
     font-weight: normal;
     padding: 0;
     margin: 0 auto 0 auto;
     color: #665544;
     
     
-}
-h1{
+     }
+h1  {
     font-family: "Young serif";
     font-weight: normal;
     color: hsl(24, 5%, 18%);
     
     
-}
+    }
 div.cat{
     min-width: 37%;
     max-width: 70%;
@@ -41,13 +33,13 @@ div.cat{
     
     
     
-}
+  }
 img{
     
     max-width: 100%;
     
     height: auto;
-}
+  }
 
 h2{
     font-weight: normal;
@@ -71,7 +63,7 @@ h2#sam{
     font-weight: bold;
 }
 table{
-    width: 500px;
+   max-width: 70%;
     
     
 }
