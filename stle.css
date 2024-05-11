@@ -100,7 +100,7 @@ ol,ul{
 #what{
     background-color: hsl(330, 100%, 98%);
     width: 100%;
-    padding: 15px 0px 0px 20px;
+    padding: 15px auto 0px auto;
 }
 td{
     font-family: Outfit;
