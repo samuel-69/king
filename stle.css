@@ -72,7 +72,7 @@ table{
 th,td{
     padding: 15px;
     font-size: 15px;
-    
+    border-left:  thin solid hsl(30, 18%, 87%);
     border-bottom: thin solid hsl(30, 18%, 87%);
    
     
