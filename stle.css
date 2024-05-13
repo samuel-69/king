@@ -64,6 +64,8 @@ h2#sam{
 }
 table{
    max-width: 70%;
+   border: thin solid;
+    
     
     
 }
@@ -72,7 +74,7 @@ th,td{
     font-size: 15px;
     border-bottom: thin solid hsl(30, 18%, 87%);
     width: 30%;
-    border-spacing: 7px;
+   
     
 }
 th{
