@@ -3,7 +3,7 @@
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica'), url('web fonts/Helvetica.woff') format('woff');
+    src: local('Helvetica'), url('webfonts/Helvetica.woff') format('woff');
     }
    
 body{
