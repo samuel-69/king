@@ -68,10 +68,10 @@ table{
     
 }
 th,td{
-    padding: 20px;
+    padding: 15px;
     font-size: 15px;
     border-bottom: thin solid hsl(30, 18%, 87%);
-    width: 60%;
+    width: 40px;
     
 }
 th{
