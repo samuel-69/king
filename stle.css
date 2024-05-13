@@ -72,12 +72,14 @@ th,td{
     font-size: 15px;
     border-bottom: thin solid hsl(30, 18%, 87%);
     width: 30%;
+    border-spacing: 7px;
     
 }
 th{
     color: hsl(14, 45%, 36%);
     font-family: Outfit SemiBold;
     font-weight: bold;
+    text-align: left;
 }
 p{
     font-family: Outfit;
