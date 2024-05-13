@@ -63,7 +63,7 @@ h2#sam{
     font-weight: bold;
 }
 table{
-   width: 70%;
+   max-width: 70%;
     
     
 }
