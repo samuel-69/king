@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+      .grid {
+ display: grid; 
+ grid-template-columns: 1fr 1fr 1fr; 
+ grid-template-rows: 1fr 1fr; 
+ grid-gap: 0.5em; 
+}
+.grid > * {
+ background-color: darkgray;
+ color: white;
+ padding: 2em;
+ border-radius: 0.5em;
+}
+
+    </style>
 </head>
 <body>
+    <div class="grid"> 
+        <div class="a">a</div> 
+        <div class="b">b</div> 
+        <div class="c">c</div>
+        <div class="d">d</div> 
+ <div class="e">e</div> 
+ <div class="f">f</div> 
+</div>
+    </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor voluptate quia enim sint aperiam in, quisquam suscipit assumenda laborum voluptates blanditiis, minima itaque. Ex quod cumque aspernatur eos nemo.</p>
 </body>
 </html>
