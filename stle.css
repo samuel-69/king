@@ -6,14 +6,7 @@
     src: local('Helvetica'), url('web fonts/Helvetica.woff') format('woff');
     }
     
-@font-face {
-    font-family: 'outfitthin';
-    src: url('webfonts/outfit-variablefont_wght.woff2') format('woff2'),
-         url('webfonts/outfit-variablefont_wght.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
    
 body{
     background-color:  hsl(330, 100%, 98%);
@@ -70,7 +63,7 @@ h2#sam{
     position:relative;
     left: 20px;
     color: hsl(15, 86%, 17%);
-    font-family: outfitthin;
+    font-family: outfit light;
     font-weight: bold;
 }
 table{
