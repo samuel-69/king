@@ -6,7 +6,9 @@
     src: local('Helvetica'), url('webfonts/Helvetica.woff') format('woff');
     }
 @fontface{
-    font-family:
+    font-family: 'YoungSerif-Regular';
+    src: url('webfonts/YoungSerif-Regular.ttf')
+}
     
 
    
