@@ -3,7 +3,7 @@
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica'), url('web fonts/Helvetica.woff') format('woff');
+    src: local('Helvetica'), url('webfonts/Helvetica.woff') format('woff');
     }
     
 
@@ -26,7 +26,7 @@ h1  {
     }
 div.cat{
     min-width: 37%;
-    max-width: 70%;
+    max-width: 60%;
     border-radius: 10px;
     padding: 25px;
     
@@ -47,6 +47,9 @@ h2{
     font-weight: normal;
     color:hsl(14, 45%, 36%);
     font-family: "Young serif";
+    position: relative;
+    top: 1.2em;
+    
     position: relative;
     top: 1.2em;
     
