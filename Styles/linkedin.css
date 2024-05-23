@@ -30,10 +30,12 @@ img{
     border-radius:50%;
 }
 li{
-    margin: 1.5em auto;
+    margin-top: 1.5em;
     border-radius: .5em;
     background-color:  hsl(0, 0%, 20%);
     font-family: Inter-Regular;
+    margin-left: auto;
+    margin-right: auto;
 }
 a{
     
