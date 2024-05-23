@@ -18,13 +18,14 @@ div{
     min-width: 600px;
   
     text-align: center;
-    padding: 1.em;
+    padding: 1em;
     background-color: hsl(0, 0%, 12%);
     border-radius: 2em;
     
 }
 ul{
     list-style-type: none;
+    border: thin solid;
 }
 img{
     border-radius:50%;
@@ -36,6 +37,7 @@ li{
     font-family: Inter-Regular;
     margin-left: auto;
     margin-right: auto;
+    width: 85%;
 }
 a{
     
