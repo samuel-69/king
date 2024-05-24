@@ -1,0 +1,28 @@
+@media (min-width: 768px){
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width:400px;
+        background-color:rgb(230, 134, 8);
+        padding: 20px;
+        
+    }
+    .content{
+        margin-left: 220px;
+    }
+    
+}
+@media (max-width: 767px) {
+    #navbar {
+        width: 100%;
+        position: static;
+        padding: 20px;
+
+    }
+    .content {
+        margin-left: 0;
+    }
+}
