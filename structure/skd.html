@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+       
+
+         @font-face {
+                font-family: Helvetica;
+                src: url(../webfonts/Helvetica.woff);
+            }
+        
+        body{
+            margin: 0;
+            background-color: beige;
+            box-sizing: border-box;
+            font-family: Helvetica;
+            overflow-x: hidden;
+            
+        }
+        header{
+            position: fixed;
+            width: calc(100vw - 30px);
+            display: flex;
+            top: 0;
+            background-color: beige;
+            height: 100px;
+ z-index: 10;           
+            
+        }
+        nav{
+            
+            display: flex;
+            align-items: center;
+            width: 40%;
+            font-size: 1.1rem;
+            justify-content: space-evenly;
+            font-family: Helvetica;
+            
+
+        }
+       header h1{
+            display: inline-block;
+            font-size: 1.4rem;
+            position:relative;
+            bottom: 20px;    
+        }
+        .charted{
+            margin: 120px 150px 0 20vw;
+            width: 70%;
+            
+        }
+        video{
+            z-index: 1;
+            width: 100%;
+        }
+        header > div{
+            flex: 1;
+            padding: .6em;
+            box-sizing: border-box;
+        }
+       
+        main{
+            width: 100%;
+
+        }
+        h1{
+            text-transform: capitalize;
+        }
+       input{
+            display: block;
+            margin: 20px auto;
+           
+        }
+       
+       a{
+text-decoration: none;           text-transform: capitalize;
+        }
+       main h1{
+            font-size: 24px;
+          
+        }
+        .cart{
+            display: flex;
+            justify-content: center;
+            margin: 50px 1vw;
+        }
+       .sar{
+            border: solid thin black;
+            text-align: center;
+            flex: 0 1 350px; 
+            
+        }
+        .cart *{
+            display: block;
+            margin: 13px 11px;
+            
+        }
+        .trombone{
+            text-transform: capitalize;
+            font-weight: bold;
+            margin: 5px 40px;
+            
+        }
+        
+       #chair{
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 6px 0;
+            
+            
+        }
+        span[class="trombone"]{
+            font-size: 25px;
+            font-family: "inter semiBold";
+        }
+        input[value="SELECT"] {
+            
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 1rem;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        input[type="submit"] {
+            background-color: rgb(146, 146, 38);
+            border: 0;
+            padding: 10px;
+            font-size: 1rem;
+            font-family: "inter semiBold";
+            font-weight: bold;
+        }
+       
+        input#email{
+            width: 250px;
+            padding: 10px;
+            
+        } 
+        main > div{
+            margin-top: 100px;
+        }
+        
+            footer{
+                display: flex;
+                
+            }
+            .footer{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(139, 139, 129);
+                width: 1100px;
+                text-align: end;
+               
+            }
+        footer  a{
+            margin: 10px;
+            
+        }
+        .carted{
+            text-align:center;
+        }
+        .charted > .boy > h1{
+            margin-top: 60px;
+        }
+        @media (max-width: 800px){
+            
+            .cart{
+                display:flex;
+                flex-direction: column;
+                width: 350px;
+                height: 1000px;
+                margin: 0 auto;
+            }
+            header{
+                 width: 100vw;
+                 display: block;
+                 background-color: beige;
+                 height: 200px;
+                 text-align: center;
+        }
+        nav{
+            display: block;
+            align-items: center;
+            width: 100%;
+            font-size: 1.1rem;
+            justify-content: space-evenly;
+            font-family: Helvetica;
+        }
+        nav * + *{
+            margin-top: 10px;
+            display: block;
+        }
+        main{
+            margin-top: 200px;
+            
+        }
+        .charted{
+            width:100%;     margin: 0;
+            text-align: center;
+        }
+        .carted{
+            width: 100%;
+        }
+    }
+        
+    
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img src="https://cdn1.iconfinder.com/data/icons/classical-music-intruments/512/33-tenor_trombone-1024.png" width="70px" id="header-img"> 
+            <h1>original trombones</h1>
+        </div>
+            <nav id="nav-bar">
+                
+                <a href="#footer" class="nav-link">feature</a>
+                <a href="#cart" class="nav-link">how it works</a>
+                <a href="#charted" class="nav-link">pricing</a>
+               
+            </nav>
+            
+        </header>
+        <main>
+            <div class="charted">
+                
+                <h1 class="carted">Handcrafted, home-made master pieces</h1>
+                <form action="https://www.freecodecamp.com/email-submit">
+                   <input type="email" name="text" id="email" required placeholder="Enter your email address" /> 
+                   <input type="submit" id="submit" value="GET STARTED">              
+                </form>
+                    <div class="boy">
+                        <h1>premium materials</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolorum ratione deleniti doloribus doloremque harum obcaecati sit asperiores dicta odit. Earum eveniet at optio vel, repudiandae libero placeat similique obcaecati!</p>
+                        <h1>fast shipping</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae, veniam dolor veritatis harum quis maxime alias omnis cumque! Asperiores unde porro non veritatis at ducimus harum assumenda tempora tempore?</p>
+                        <h1>quality assurance</h1><p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quisquam illo doloremque. Adipisci, velit saepe nemo maxime molestias cum fugit a minima in similique, assumenda pariatur ut quod ullam dicta.
+                        </p>
+                    </div>
+                    <div><video  src="https://www.youtube.com/watch?v=3ahWiS--CUU&pp=ygUNdHJvbWJvbmUgc29sbw%3D%3D" controls width="700px" height="700px" preload="auto" id="video"></video></div>
+                </div>
+                <div class="cart">
+                    <div class="sar">
+            <h2 class="trombone" id="chair">tenor trombone</h2>
+            <span class="trombone">$600</span>
+            <span>Lorem ipsum</span>
+            <span>Lorem ipsum dolor</span>
+              <span>Lorem ipsum</span>
+              <span>Lorem ipsum</span>
+              <input type="submit" value="SELECT" id="submit">
+           </div>
+           
+           <div class="sar">
+               <h2 class="trombone" id="chair">bass trombone</h2>
+               <span class="trombone">$900</span>
+              <span>lorem ipsum</span>
+              <span>lorem ipsum dolor</span>
+              <span>lorem ipsum</span>
+              <span>lorem ipsum</span>
+              <input type="submit" value="SELECT" id="submit">
+            </div> 
+            <div class="sar">
+            <h2 class="trombone" id="chair">valve trombone</h2>
+              <span class="trombone">$1200</span>
+              <span>Plays similar to a Trumpet</span>
+              <span>Great for Jazz Bands</span>
+              <span>Lorem ipsum dolor.</span>
+              <span>lorem ipsum</span>
+              <input type="submit" value="SELECT" id="submit">
+            </div> 
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#header">privacy</a>
+            <a href="#form">terms</a>
+            <a href="#hermo">contacts</a>
+            <p>copyright 2024, original trombones</p>
+        </div>
+        </footer>
+</body>
+</html>
