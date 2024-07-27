@@ -15,8 +15,6 @@ body{
 div{
     margin: 3em auto;
     max-width: 70%;
-    min-width: 600px;
-  
     text-align: center;
     padding: 1em;
     background-color: hsl(0, 0%, 12%);
@@ -61,3 +59,8 @@ h1+p{
 li:hover{
     background-color: hsl(75, 94%, 57%);
 }
+@media (max-width: 750px){
+    div{
+        width: 85%;
+    }
+}   
