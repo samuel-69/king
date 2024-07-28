@@ -1,61 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-
-    nav{
-        display: flex;
-        background-color:beige;
-        
-    }
-    li{
-        display: block;
-        margin: 10px;
-        flex: 1;
-    }
-    div{
-        width: 200px;
-        height: 200px; 
-        text-align: center;
-        border: solid;
-        padding-top: 30px;
-    }
-    .charted{
-            margin: 120px 150px 0 20vw;
-            width: 70%;
-            text-align: center;
-        }
-        input{
-            display: block;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+              @font-face {
+                font-family: Helvetica;
+                src: url(../webfonts/Helvetica.woff);
+            }
+            body{
+                font-family: Helvetica;
+                margin: 0;
+            }
+            #navbar{
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 right: 0; 
+
+ }           #header{
+                 height: 80px;
+                 display: flex;
+                 justify-content: flex-end;
+                 align-items: center;
+                 list-style-type: none;
+                 margin: 0;
+                 background-color: rgb(112, 34, 10);
+                 padding: 0;
+                 padding-right: 3%;
+                 
+            }
+            .margin{
+              margin-left: 3%;
+              margin-right: 3%;
+            }
+       .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px;
+        justify-content: space-between;
+
+       
+        
+       }
+       #projects{
+        background-color:rgb(48, 30, 65);
+       } 
+       div a { 
+          width: clamp(250px,30%,650px); 
+          text-decoration: none;
+          color: white;
+          margin-bottom: 15px;
+        }
+        .grow{
+         margin-right: 15px;
+
+       }
+       img{
+        flex: 1;
+        max-height: 350px;
+        object-fit: cover;  
+      }
+      figure{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .fit{
+        flex: 1;
+      }
+      figcaption{
+        box-sizing: border-box;
+        padding: 8px;
+        text-align: center;
+        height: 40px;
+        background-color: rgb(50, 59, 59);
+      }
+      #welcome-section{
+        margin-top: 70px;
+        display: flex;
+        height: calc(100vh - 40px);
+        justify-content: center;
+        align-items: center;
+        background-color: #041313;
+      }
+      #welcome-section *{
+        text-align: center;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+      }
+      #projects h1{
+        text-align: center;
+        border-bottom: solid rgb(41, 39, 36);
+        padding: 20px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+      #closed{
+        display: flex;
+        height: calc(100vh - 100px);
+        background-color: darkslategrey; 
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .mom{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: center;
+        
+        
+      } 
+      #closed h1{
+        text-align: center;
+      }
+      #closed a:hover{
+        position: relative;
+        top: 7px;
+      }
+      #closed li{
+        margin: 3%;
+      }
+      .closing{
+        width: 70%;
+      }
+      @media (max-width: 700px){
+        div a{
+            width: 43%;
+            font-size: 12px;
+         
+        }
+        .flex-container{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .closing{
+          width: 90%;
+        }
+      }
+      
+      
+
+    </style>
 </head>
 <body>
-    <main>
-        <nav>
-            <li><a href="">hjkvfxhulkv</a></li>
-            <li><a href=""></a>hjkvfxhulkv</li>
-            <li><a href=""></a>hjkvfxhulkv</li>
-            <li><a href=""></a>hjkvfxhulkv</li>
-            <li><a href=""></a>hjkvfxhulkv</li>
-            <li><a href=""></a>hjkvfxhulkv</li>
+    <header>
+        <nav id="navbar">
+         <ul id="header">
+            <li><a href="#header">about</a></li>
+            <li class="margin"><a href="#projects">work</a></li>
+            <li><a href="#closed">contact</a></li>
+         </ul>
         </nav>
-        <div>
-            <input type="submit" id="submit" value="GET STARTED">
-        </div>
-        <div class="charted">
-                
-            <h1 class="carted">Handcrafted, home-made master pieces</h1>
-            <form action="https://www.freecodecamp.com/email-submit">
-               <input type="email" name="text" id="email" required placeholder="Enter your email address" /> 
-               <input type="submit" id="submit" value="GET STARTED">
-                <input type="submit" value="SELECT" id="submit">               
-            </form>
-        </div>
-       
-    </main>
+    </header>
+    <div>
+        <section id="welcome-section">
+          <div>
+            <h1>
+              Hey I am Kingo
+            </h1>
+            <p>a web developer</p>
+          </div>
+        </section>
+        <section id="projects">
+            <h1>These are some of my projects</h1>
+            <div class="flex-container">
+               <a href="https://samuel-69.github.io/king/structure/skd.html" class="project-tile grow"><figure><img src="../images/Screenshot 2024-07-28 120258.png" /><figcaption>tribute page</figcaption> </figure></a>
+               <a href="https://samuel-69.github.io/king/structure/skd.html" class="project-tile cart" ><figure><img src="../images/Screenshot 2024-07-28 120651.png" /><figcaption>random quote machine</figcaption></figure></a>
+               <a href="https://samuel-69.github.io/hello/git.html" target="_blank" class="project-tile grow"><figure><img src="../images/Screenshot 2024-07-28 114253.png" /><figcaption>map</figcaption> </figure></a>
+               <a href="https://samuel-69.github.io/hello/sam.html"  class="project-tile"><figure><img src="../images/Screenshot 2024-07-28 114003.png" /><figcaption>tic tac toe </figcaption></figure></a>
+               <a href="https://samuel-69.github.io/hello/index.html" target="_blank" class="project-tile grow"><figure><img src="../images/Screenshot 2024-07-28 114416.png" /><figcaption>wiki</figcaption> </figure></a>
+               <a href="https://samuel-69.github.io/king/structure/skd.html" class="project-tile"><figure><img src="../images/calc.png" /><figcaption>calculator</figcaption> </figure></a>
+            </div>
+    </section>
+    <section id="closed">
+      <div class="closing">
+        <h1>let's work together</h1>
+        <ul class="mom">
+          <li><a href="https://github.com/dashboard">facebook</a></li>
+          <li><a href="https://github.com/dashboard" id="profile-link">GitHub</a></li>
+          <li><a href="https://github.com/dashboard">X</a></li>
+          <li><a href="https://github.com/dashboard">send a mail</a></li>
+        </ul>
+      </div>
+    </section>
+    </div>
 </body>
 </html>

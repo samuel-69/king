@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../Styles/sth.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<html>
-    <body>
-        <div class="sam">
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p></div></div>
-        <div class="ejig"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae maxime eaque distinctio laborum voluptates ab ipsum magnam itaque. Adipisci sint molestiae fuga aspernatur cum, porro nisi cupiditate et natus.</p>
+<style rel="stylesheet">
+    body{
+        margin: 0;
+    }
+    .flex-container{
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        background-color: rgb(107, 50, 50);
+        align-items: center;
+        font-size: 20px;
+        padding-right: 10px;
+
+    }
+    .flex-container > li{
+        margin: 10px;
+    }
+    #intro{
+        margin-top: 80px;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;  
+        background-color: rgb(26, 43, 40);
+        margin-left: 0;
+    }
+    #intro > *{
+        text-align: center;
+        
+    }
+    #intro h1{
+        font-size: 40px;
+        color: white;
+    }
+    #intro{
+        font-size: 25px;
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul class="flex-container">
+                <li><a href="#footer">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#header">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="intro">
+        <div class="great">
+
+            <h1>Hey I am kingo</h1>
+            <p>a web developer</p>
+        </div>
+    </div>
+    <div id="projects">
+        <h2>These are some of my projects</h2>
+        <div class="flex">
+            <a href=""><fig><img src=""><figcaption>tribute page</figcaption></fig></a>
+            <a href=""><fig><img src=""><figcaption>random quote machine</figcaption></fig></a>
+            <a href=""><fig><img src=""><figcaption>javascript calculator</figcaption></fig></a>
+            <a href=""><fig><img src=""><figcaption>map data across the globe</figcaption></fig></a>
+            <a href=""><fig><img src=""><figcaption>vikipedia viewer</figcaption></fig></a>
+            <a href=""><fig><img src=""><figcaption>tic tac toe game</figcaption></fig></a>
+
+        </div>
     </div>
 </body>
 </html>
