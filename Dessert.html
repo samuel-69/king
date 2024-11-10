@@ -515,7 +515,7 @@ function Dessert({ image, name, category, price, addCart,isItem}) {
              <li style={{color: 'rgb(47, 48, 47)' }}>@${price}</li>     
              <li className='mid'>${price*num}</li>  
 
-              {trash ? <button className='middle' onClick={()=>removeCart(name)} style={{cursor: 'pointer'}}><object data="/assets/images/icon-remove-item.svg" type="image/svg+xml"></object></button> : null} 
+              {trash ? <button className='middle' onClick={()=>removeCart(name)} style={{cursor: 'pointer'}}><object data="./assets/images/icon-remove-item.svg" type="image/svg+xml"></object></button> : null} 
               </div>
             </div>
             </div> : null
