@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <style>
+        @font-face {
+            font-family: RedHatText-VariableFont_wght;
+            src: url(/assets/fonts/RedHatText-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: RedHatText-SemiBold;
+            src: url(/assets/fonts/static/RedHatText-SemiBold.ttf);
+        }
+        @font-face {
+            font-family: RedHatText-Bold;
+            src: url(/assets/fonts/static/RedHatText-Bold.ttf);
+        }
+        @font-face {
+            font-family: RedHatText-Italic-VariableFont_wght;
+            src: url(/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+        }
+        body{
+            font-family: RedHatText-VariableFont_wght;
+            margin: 30px;
+            position: relative;
+            background-color: #ffafcc;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            width : 900px;
+           
+        }
+        .margin-top{
+              margin-top: 60px;
+        }
+        .bold{
+            font-family: RedHatText-Bold;
+        }
+        
+        .flex p{
+            margin: 5px;
+        }
+        .flex-item{
+            margin: 10px;
+        }
+        img{
+            width: 270px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 0;
+            
+        }
+        .fas{
+           
+           color:rgba(48, 17, 17, 0); 
+           margin: 0 3px;  
+          border-radius: 50%;
+         
+       }
+       .fa-minus-circle,.fa-plus-circle{
+        font-size: 20px !important;
+        color: rgb(165, 23, 23);
+       }
+       .minus :hover{
+           color: rgb(37, 33, 33);
+       }
+       .plus :hover{
+        color: rgb(37, 33, 33);
+       }
+        .confirm{
+           color: gray;
+           width: 80%;
+           margin-left: 10%;
+           margin-right: 10%;
+           height: 30px;
+           border-radius: 20px;
+           background-color: rgb(165, 23, 23);
+           font-size: 18px;
+           margin-top: 15px !important;
+           color: white;
+        }
+        
+        
+        .btn{
+            display: block;
+            position: relative;
+            left: 60px;
+            bottom: 25px;
+            border-radius: 20px;
+            height: 40px;
+            width: 150px;
+            background-color: #264653;
+            padding: 0;
+            
+            
+        }
+        .btn :hover{ 
+            background-color: #f5cac3;
+            border-radius: 20px;
+        }
+        .center{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            
+        }
+        .cent{
+            align-self: center;
+        }
+        .padd{
+          
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+
+            
+        }
+        
+        
+        .padd *{
+            display: inline-block;
+           
+            font-size: 16px; 
+            
+        }
+       
+        
+        .app {
+            position: fixed;
+            top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #003049; /* Slightly transparent */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it is on top */
+    border-radius: 8px; /* Optional styling */
+    width: 30%;
+    height: 500px;
+}
+.flex-list{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(47, 48, 47);
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: rgb(245, 112, 112) 0.2px solid;
+    font-family: RedHatText-Italic-VariableFont_wght;
+}
+.flex-list *:not(:last-child){
+    margin-right: 10px;
+}
+.flex-list .middle{
+    margin-left: auto;
+    position: relative;
+    bottom : 20px;
+}
+#flexer{
+    display: flex;
+    margin: 25px;   
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#flexed{
+    margin-bottom: 20px;
+}
+.high{
+    height: 250px;
+    overflow-y: scroll;
+}
+#flexer img{
+      width: 80px;
+      height: 60px;
+      margin-right: 20px;
+}
+ul{
+    list-style-type:none;
+    padding: 0;
+    
+}
+.flex-li{
+    display: flex;
+    width: 100%;
+}
+.flex-li *:not(:last-child){
+    margin-right: 12px;
+}
+.floated{
+    flex: 1;
+}
+.side{
+    background-color: #f4acb7;
+    padding: 20px 30px 20px;
+    margin: 55px 0 0 25px;  
+}
+
+.flex-li > *:last-child{
+   margin-left: auto;
+   position: relative;
+   bottom: 20px; 
+}
+.name{
+    margin-bottom: 0px;
+}
+.middle{
+    border-radius: 50%;
+}
+
+@media (max-width: 700px ){
+    body{
+        margin: 15px 7px;
+        
+    }
+    .flex{
+        width: 90%;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+        
+       
+       
+
+    </style>
+</head>
+<body id="bodyb">
+    
+    <div id="root"></div>
+    
+    <script type="text/babel">
+     
+        let dessert = [
+    {
+       "image": {
+            "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
+            "mobile": "./assets/images/image-waffle-mobile.jpg",
+            "tablet": "./assets/images/image-waffle-tablet.jpg",
+            "desktop": "./assets/images/image-waffle-desktop.jpg"
+       },
+       "name": "Waffle with Berries",
+       "category": "Waffle",
+       "price": 6.50
+    },
+    {
+        "image": {
+            "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
+            "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
+            "tablet": "./assets/images/image-creme-brulee-tablet.jpg",
+            "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
+        },
+        "name": "Vanilla Bean Crème Brûlée",
+        "category": "Crème Brûlée",
+        "price": 7.00
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
+            "mobile": "./assets/images/image-macaron-mobile.jpg",
+            "tablet": "./assets/images/image-macaron-tablet.jpg",
+            "desktop": "./assets/images/image-macaron-desktop.jpg"
+        },
+        "name": "Macaron Mix of Five",
+        "category": "Macaron",
+        "price": 8.00
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
+            "mobile": "./assets/images/image-tiramisu-mobile.jpg",
+            "tablet": "./assets/images/image-tiramisu-tablet.jpg",
+            "desktop": "./assets/images/image-tiramisu-desktop.jpg"
+        },
+        "name": "Classic Tiramisu",
+        "category": "Tiramisu",
+        "price": 5.50
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
+            "mobile": "./assets/images/image-baklava-mobile.jpg",
+            "tablet": "./assets/images/image-baklava-tablet.jpg",
+            "desktop": "./assets/images/image-baklava-desktop.jpg"
+        },
+        "name": "Pistachio Baklava",
+        "category": "Baklava",
+        "price": 4.00
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
+            "mobile": "./assets/images/image-meringue-mobile.jpg",
+            "tablet": "./assets/images/image-meringue-tablet.jpg",
+            "desktop": "./assets/images/image-meringue-desktop.jpg"
+        },
+        "name": "Lemon Meringue Pie",
+        "category": "Pie",
+        "price": 5.00
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
+            "mobile": "./assets/images/image-cake-mobile.jpg",
+            "tablet": "./assets/images/image-cake-tablet.jpg",
+            "desktop": "./assets/images/image-cake-desktop.jpg"
+        },
+        "name": "Red Velvet Cake",
+        "category": "Cake",
+        "price": 4.50
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
+            "mobile": "./assets/images/image-brownie-mobile.jpg",
+            "tablet": "./assets/images/image-brownie-tablet.jpg",
+            "desktop": "./assets/images/image-brownie-desktop.jpg"
+        },
+        "name": "Salted Caramel Brownie",
+        "category": "Brownie",
+        "price": 4.50
+     },
+     {
+        "image": {
+            "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
+            "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
+            "tablet": "./assets/images/image-panna-cotta-tablet.jpg",
+            "desktop": "./assets/images/image-panna-cotta-desktop.jpg"
+        },
+        "name": "Vanilla Panna Cotta",
+        "category": "Panna Cotta",
+        "price": 6.50
+     }
+]
+function Dessert({ image, name, category, price, addCart,isItem}) {
+  const icon = <object data="/assets/images/icon-add-to-cart.svg" type="image/svg+xml"></object>;
+  const [num, setNum] = React.useState(1);
+  const [isInCart, setIsInCart] = React.useState(false); // Track if the item is in the cart
+ 
+  const handleAddToCart = () => {
+   // addCart(name, price, num);
+    setNum(1);
+
+   // setInCart(true);
+    setIsInCart(true); // Set the item as in the cart
+  };
+  React.useEffect(() => {
+        setIsInCart(isItem(name)); // Update when `isItemInCart` changes
+    }, [isItem, name]);
+
+  const handleAdd = () => {
+    setNum(prevNum => prevNum + 1);
+    setIsInCart(true);
+    
+
+  };
+
+  const handleSub = () => {
+    setNum(prevNum => {
+      if (prevNum > 1)  return prevNum - 1;
+      else  {
+       
+          return 0;
+      }
+    });
+  };
+  // Render the submit button based on whether the item is in the cart
+  const submitButton = !isInCart || !num ? (
+    <span className='center'>{icon} <span className='cent'>Add to Cart</span></span>
+
+  ) : (
+    <span className="padd">
+      <span className="minus" onClick={handleSub}>
+        <i className="fas fa-minus-circle"></i>
+
+      </span>
+      <span className="spa">{num}</span>
+      <span className="plus" onClick={handleAdd}>
+        <i className="fas fa-plus-circle"></i>
+      </span>
+    </span>
+  );
+
+  // Update cart when num changes
+  React.useEffect(() => {
+   
+   if (isInCart){ 
+      addCart(name, price, num, image);
+  }
+  }, [num, isInCart, name, price]);
+
+
+ 
+  
+  
+
+  return (
+    <div className='flex-item'>
+      <img src={image.desktop} alt="" />
+      <button className='btn' onClick={isInCart ? null : handleAddToCart}>{submitButton}</button>
+      <p>{category}</p>
+      <p className='bold'>{name}</p>
+      <p style={{color: '#c1121f',fontFamily: 'RedHatText-SemiBold'}}>${price}</p>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+        function Flex({addCart,isItem}){
+            return (
+               <div className='father'>
+                <h1>Dessert</h1>
+               
+                <div  className='flex'>
+               { dessert.map((cart,i)=><Dessert addCart={addCart} {...cart} key={i} isItem={isItem}/>)}
+                </div>
+                </div>
+            )
+        }
+      
+
+        function Side({list,removeCart,removeArray}){
+          const totalItems = list.reduce((acc, item) => acc + item.num, 0);
+          const totalCost = list.reduce((cost,item)=>cost + item.num*item.price, 0);
+          const [isOrderConfirmed, setIsOrderConfirmed] = React.useState(false);
+
+    const confirmOrder = () => {
+        setIsOrderConfirmed(true);
+       
+    };
+    
+    const startNewOrder = () => {
+        setIsOrderConfirmed(false);
+        removeArray();
+
+    };
+    const modal = () => {
+      
+         return (isOrderConfirmed ?
+            <div className="app">
+ <div className="modal">
+                    <object data="/assets/images/icon-order-confirmed.svg" type="image/svg+xml"></object>
+                    <h2>Order Confirmed!</h2>
+                    <p>We hope you enjoy your food!</p>
+                    <ul className='high'>{list.map((item,i)=><MyCart {...item} key={i} imag='image' />)}</ul>
+                    <div className='wrapper'><button onClick={startNewOrder} className='confirm'>Start New Order</button></div>
+                </div>
+            
+            
+        </div> : null
+    )   
+    };  
+          const lis = () => {
+            return (
+                <ul className='margin-top'>
+                    {list.map((item,i)=><MyCart {...item} key={i} trash='trash' removeCart={removeCart} />)}
+                </ul>
+            )
+          }
+            return( 
+                <div className='side'>
+                     <h2>your cart({totalItems})</h2>
+                     {totalItems ? 
+                     <div>
+                    {lis()}
+                <div id='ordr'>
+                <div className='order'>
+                <p>order total</p>  
+                <p style={{fontFamily: 'RedHatText-Bold', fontSize: '1.6em'}}>{`$${totalCost}`}</p> 
+                </div>
+                <p><object data="/assets/images/icon-carbon-neutral.svg" type="image/svg+xml"></object>this is a carbon neutral delivery</p> 
+                <button className='confirm' onClick={confirmOrder}>Confirm Order</button>
+                {modal()}
+                </div>
+                </div> : <div className='side'>
+                    <object data="/assets/images/illustration-empty-cart.svg" type="image/svg+xml" style={{display: 'inline-block',marginLeft: '30px'}}></object>
+                    <p style={{textAlign:'center'}}>your added will apear here</p>
+                    </div>}
+                </div>
+            )
+        }
+        function MyCart({name,price,num,image,imag,trash,removeCart}){
+           
+            
+          
+           return(
+            num ? <div id={trash ? 'flexed' : 'flexer'}>
+               {imag ? <img src={image.desktop} className='float' /> : null} 
+               <div className='floated'>
+             <li className='name'>{name}</li> 
+             <div className={trash ? 'flex-list' : 'flex-li'}>    
+             <li style={{color: 'brown'}}>{num}x</li>  
+             <li style={{color: 'rgb(47, 48, 47)' }}>@${price}</li>     
+             <li className='mid'>${price*num}</li>  
+
+              {trash ? <button className='middle' onClick={()=>removeCart(name)} style={{cursor: 'pointer'}}><object data="/assets/images/icon-remove-item.svg" type="image/svg+xml"></object></button> : null} 
+              </div>
+            </div>
+            </div> : null
+           );
+        }
+        function App(){
+            const [listName,setName] = React.useState([]);
+            
+            
+         // React.useEffect(()=>setNam(''));
+          const removeCart = (name) => {
+              setName(prevListName => {
+                  const newList = prevListName.filter(items => items.name !== name);
+                  return newList; 
+                });
+                
+  };
+  const addCart=(name,price,num,image)=>{
+                   
+                    let existingItem = listName.find(item=> item.name===name);
+                    if (existingItem){
+                        existingItem.num=num;
+                       const newArray = [...listName];
+                       setName(newArray);
+                    }
+                    else {
+                        const newArray = [...listName,{name,price,num,image}];
+                        setName(newArray);
+                    }
+                 } 
+  const isItemInCart = (name) => listName.some(item => item.name === name);
+  
+            return (
+                <div className='main'style={{display: "flex",alignItems: 'flex-start' }}>
+                  <Flex addCart={addCart} isItem={isItemInCart}
+                />
+                    
+                  <Side list={listName} removeCart={removeCart} removeArray={()=>setName([])} />  
+                </div>
+            )
+            }
+        ReactDOM.render(
+            <App />,document.getElementById('root')
+        )
+    </script>
+</body>
+</html>
