@@ -471,7 +471,7 @@ function Dessert({ image, name, category, price, addCart,isItem}) {
          return (isOrderConfirmed ?
             <div className="app">
  <div className="modal">
-                    <object data="/assets/images/icon-order-confirmed.svg" type="image/svg+xml"></object>
+                    <object data="./assets/images/icon-order-confirmed.svg" type="image/svg+xml"></object>
                     <h2>Order Confirmed!</h2>
                     <p>We hope you enjoy your food!</p>
                     <ul className='high'>{list.map((item,i)=><MyCart {...item} key={i} imag='image' />)}</ul>
@@ -500,13 +500,13 @@ function Dessert({ image, name, category, price, addCart,isItem}) {
                 <p>order total</p>  
                 <p style={{fontFamily: 'RedHatText-Bold', fontSize: '1.6em'}}>{`$${totalCost}`}</p> 
                 </div>
-                <p><object data="/assets/images/icon-carbon-neutral.svg" type="image/svg+xml"></object>this is a carbon neutral delivery</p> 
+                <p><object data="./assets/images/icon-carbon-neutral.svg" type="image/svg+xml"></object>this is a carbon neutral delivery</p> 
                 <button className='confirm' onClick={confirmOrder}>Confirm Order</button>
                 {modal()}
                 </div>
                 </div> : <div className='side'>
-                    <object data="/assets/images/illustration-empty-cart.svg" type="image/svg+xml" style={{display: 'inline-block',marginLeft: '30px'}}></object>
-                    <p style={{textAlign:'center'}}>your added will apear here</p>
+                    <object data="./assets/images/illustration-empty-cart.svg" type="image/svg+xml" style={{display: 'inline-block',marginLeft: '30px'}}></object>
+                    <p style={{textAlign:'center'}}>your added item will apear here</p>
                     </div>}
                 </div>
             )
